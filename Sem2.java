@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class Main {
+public class Sem2 {
     public static void main(String[] args) {
       task1();
     }
@@ -30,7 +30,7 @@ public class Main {
             whereClause.setLength(whereClause.length() - 5);
         }
 
-        System.out.println("WHERE clause: " + whereClause.toString())
+        System.out.println("WHERE clause: " + whereClause.toString());
     }
 
     public static void writeLogFile(){
@@ -49,7 +49,7 @@ public class Main {
 
     public static void bubbleSort(int[] array, BufferedWriter writer) throws IOException{
         int n = array.length;
-        
+
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 if (array[j] > array[j + 1]) {
@@ -58,7 +58,7 @@ public class Main {
                     array[j + 1] = temp;
                 }
             }
-            
+
             writer.write("После итерации " + (i + 1) + ": " + Arrays.toString(array));
             writer.newLine();
         }
