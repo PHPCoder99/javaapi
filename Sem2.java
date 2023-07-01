@@ -2,6 +2,7 @@ import org.json.JSONObject;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -46,7 +47,7 @@ public class Main {
         }
     }
 
-    public static void bubbleSort(int[] array, BufferedWriter writer{
+    public static void bubbleSort(int[] array, BufferedWriter writer) throws IOException{
         int n = array.length;
         
         for (int i = 0; i < n - 1; i++) {
