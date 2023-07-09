@@ -26,7 +26,7 @@ public class Sem2 {
         }
 
         if (whereClause.length() > 0) {
-             Удаление последнего "AND "
+            // Удаление последнего "AND "
             whereClause.setLength(whereClause.length() - 5);
         }
 
